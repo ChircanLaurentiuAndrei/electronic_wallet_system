@@ -1,0 +1,8 @@
+Mon May 19 20:53:26 2025
+ :Card Number: 1001-2002-3003-4004, Transaction: TRANSFER_OUT, Amount: 50.
+Mon May 19 20:53:26 2025
+ :Card Number: 2002-3003-4004-5005, Transaction: TRANSFER_IN, Amount: 50.
+Mon May 19 20:53:39 2025
+ :Card Number: 1001-2002-3003-4004, Transaction: LOAD, Amount: 100.
+Mon May 19 20:53:45 2025
+ :Card Number: 1001-2002-3003-4004, Transaction: USE, Amount: 20.

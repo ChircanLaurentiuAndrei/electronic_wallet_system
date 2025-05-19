@@ -80,15 +80,16 @@ void Wallet::listCards() const {
 }
 
 void Wallet::viewCard(const std::string& number) {
-    for(auto& card : cards) {
-        if(card.getNumber() == number) {
+    for (auto& card : cards) {
+        if (card.getNumber() == number) {
             card.incrementViewCount();
-            card.displayCard();
-        }
-        std::sort(cards.begin(), cards.end(), [](const Card& a, const Card& b) {
+            card.displayCardDetails();
+            std::sort(cards.begin(), cards.end(), [](const Card& a, const Card& b) {
                 return a.getView() > b.getView();
-        });
-        return;
+            });
+
+            return;
+        }
     }
     std::cout << "Error: Card not found!\n";
 }

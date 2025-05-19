@@ -69,5 +69,9 @@ void Card::incrementViewCount() {
 }
 
 void Card::displayCard() const {
+    std::cout<<"Card Name: " << cardName << ", Card Number: " << cardNumber <<"\n";
+}
+
+void Card::displayCardDetails() const {
     std::cout<<"Card Name: " << cardName << ", Card Number: " << cardNumber << ", Name: " << name << ", Expiration Date: " << expirationDate << ", Balance: " << moneyAmount << ", View Count: " << viewCount << "\n";
 }

@@ -1,3 +1,4 @@
 cardName,cardNumber,name,expirationDate,moneyAmount,viewCount
-Visa,1001-2002-3003-4004,Laurentiu,01/27,0,3
-Visa,1002-2002-3003-4004,Laurentiu,01/27,0,0
+Master,2002-3003-4004-5005,Bulboaca-Teodor,06/28,100,5
+Visa,1001-2002-3003-4004,Chircan-Laurentiu,01/27,130,4
+Revolut,3003-4004-5005-6006,Laurentiu-Andrei,07/30,500,4

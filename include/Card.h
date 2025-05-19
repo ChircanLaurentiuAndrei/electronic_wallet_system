@@ -19,6 +19,7 @@ class Card {
         int getView() const;
         void incrementViewCount();
         void displayCard() const;
+        void displayCardDetails() const;
     private:
         std::string cardName, cardNumber, name, expirationDate;
         double moneyAmount;
