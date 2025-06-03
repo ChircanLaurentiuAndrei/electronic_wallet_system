@@ -1,6 +1,11 @@
 #include "Card.h"
 #include <iostream>
 
+// ANSI color codes
+#define COLOR_GREEN   "\033[32m"
+#define COLOR_YELLOW  "\033[33m"
+#define COLOR_RESET   "\033[0m"
+
 Card::Card(std::string cardName, std::string cardNumber, std::string name, std::string expirationDate) {
     this->cardName = cardName;
     this->cardNumber = cardNumber;
@@ -69,9 +74,15 @@ void Card::incrementViewCount() {
 }
 
 void Card::displayCard() const {
-    std::cout<<"Card Name: " << cardName << ", Card Number: " << cardNumber <<"\n";
+    std::cout << "Card Name: " << cardName
+              << ", Card Number: " << COLOR_GREEN << cardNumber << COLOR_RESET << "\n";
 }
 
 void Card::displayCardDetails() const {
-    std::cout<<"Card Name: " << cardName << ", Card Number: " << cardNumber << ", Name: " << name << ", Expiration Date: " << expirationDate << ", Balance: " << moneyAmount << ", View Count: " << viewCount << "\n";
+    std::cout << "Card Name: " << cardName
+              << ", Card Number: " << COLOR_GREEN << cardNumber << COLOR_RESET
+              << ", Name: " << name
+              << ", Expiration Date: " << expirationDate
+              << ", Balance: " << COLOR_YELLOW << moneyAmount << COLOR_RESET
+              << ", View Count: " << viewCount << "\n";
 }
